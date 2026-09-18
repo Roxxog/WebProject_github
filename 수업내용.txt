@@ -2,23 +2,25 @@
 git config --global user.name github이름
 git config --global user.email github 이메일
 
+기본 세팅
 git init --> working direcoty를 git이 관리하도록 working directory에 .git을 생성 (원하는 위치에서 명령어 실행)
-git add . --> 파일 추적(파일의 변경 내용을 Staging Area에 등록)
-	    Staging Area : 이번에 저장할 변경사항을 임시로 모아두는 곳
-git commit -m "메모" (Staging Area에 있는 변경 사항을 하나의 버전으로 확정해서 git에 기록)
-git log (commit을 해야 log에 기록됨)
-git push origin main(or master 구버전인 경우) : 연결된 github에 파일 올리기
-git pull origin main : github에서 파일 가져오기
 
-git status : 
+기본 명령어
+git add . --> 파일의 변경 내용을 Staging Area에 추가 (수정하거나 새로운 파일을 다음 commit에 포함할 대상으로 만드는 명령어
+	    	  Staging Area : 이번에 저장할 변경사항을 임시로 모아두는 곳
+git commit -m "메모" --> Staging Area에 있는 변경 사항을 하나의 버전으로 확정해서 로컬 저장소에 기록
+git log --> (commit을 해야 log에 기록됨)
+git push origin main(or master 구버전인 경우) --> 연결된 github에 파일 올리기
+git pull origin main --> github에서 파일 가져오기
+
+git status
 git show
 git clone https:~
 
 vim bye.txt --> 텍스트 파일 생성
 
-remote
+git remote add origin github 프로젝트 주소 (github 프로젝트와 연동)
 on branch main(or master)
-git push origin master (git push --> github에 올리기)
 
 첫 번째 실습과제 : github 에 commit하고 github 사이트 링크 올리기 (lms에 공지 올라올 예정)
 
